@@ -2,6 +2,11 @@ Domestic power data recorded by Jack Kelly 2011-2012
 
 This dataset contains data from two houses: "JerninghamRd" and "BellendenRd".
 
+This dataset isn't especially useful for NILM work yet because I don't have a
+"ground truth" record of each appliance's state change.  This will change 
+when I install my 24 individual appliance monitors (see the "future plans"
+section below.)
+
 Each house contains a "wattsUp" folder and a "currentCost" folder:
 
 
