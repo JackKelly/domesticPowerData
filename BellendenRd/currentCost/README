@@ -1,5 +1,5 @@
-The files in BellendenRd/currentCost are named in chronological order.  Typically there is a gap
-of about a day between files.
+The files in BellendenRd/currentCost are named in chronological order.
+Typically there is a gap of about a day between files.
 
 The whole-house CurrentCost data for BellendenRd is also available on Cosm.com:
 https://cosm.com/feeds/49595 (the "currentCost" feed)
@@ -8,21 +8,22 @@ https://cosm.com/feeds/49595 (the "currentCost" feed)
 CURRENTCOST INDIVIDUAL APPLIANCE MONITORS (IAMs)
 ================================================
 
-One Weds 20th June 2012 I added three CurrentCost Individual Appliance Monitors so
-files BellendenRd/currentCost/currentCostData23.dat onwards have three columns:
+One Weds 20th June 2012 I added three CurrentCost Individual Appliance Monitors 
+so files BellendenRd/currentCost/currentCostData23.dat onwards have three 
+columns:
 
 * col1 is the Unix timestamp
 * col2 is the sensor number
 * col3 is the power reading
 
-The CurrentCost IAMs sample once every six seconds although sometimes the receiver
-fails to receive every sample so some samples get dropped (about 10%, depending 
-on distance).
+The CurrentCost IAMs sample once every six seconds. Sometimes the 
+receiver fails to receive a sample so about 10% of the samples get dropped
+(this failure rate increases with distance between the sensor and the receiver).
 
 I sometimes turn off appliances from the mains (because I am trying to keep my
 energy consumption to a minimum).  If an IAM is disconnected from the
-mains then it no longer transmits and hence does not appear in the data file.  Hence 
-if a sensor does not appear for a while then it is safe to assume that the
+mains then it no longer transmits and hence does not appear in the data file.  
+Hence if a sensor does not appear for a while then it is safe to assume that the
 appliance is off.
 
 
