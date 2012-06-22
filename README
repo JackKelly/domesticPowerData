@@ -1,0 +1,73 @@
+Domestic power data recorded by Jack Kelly 2011-2012
+
+This dataset contains data from two houses: "JerninghamRd" and "BellendenRd".
+
+Each house contains a "wattsUp" folder and a "currentCost" folder:
+
+
+WATTSUP FOLDER
+==============
+
+The "wattsUp" folder contains individual appliance data recorded using a WattsUp meter [1]. 
+The WattsUp records at a sample rate of 1Hz. It can record a number of parameters including voltage,
+power and power factor. Most of the files in the wattsUp folder are CSV files with just a single
+column recording power.  A few of the files in the wattsUp folder also include other
+parameters (the first row of these files provides human-readable names for these parameters).
+
+
+CURRENTCOST FOLDER
+==================
+
+The "currentCost" folder contains whole-house, aggregate data recorded using a
+CurrentCost EnviR home energy monitor [2].  This records apparent power once every
+six seconds (although occasionally the EnviR drops a sample).  These files contain two columns:
+the first column is the UNIX timestamp and the second column is the power reading.
+
+The files in BellendenRd/currentCost are named in chronological order.  Typically there is a gap
+of about a day between files.
+
+The whole-house CurrentCost data for BellendenRd is also available on Cosm.com:
+https://cosm.com/feeds/49595 (the "currentCost" feed)
+
+
+CURRENTCOST INDIVIDUAL APPLIANCE MONITORS (IAMs)
+================================================
+
+One Weds 20th June 2012 I added three CurrentCost Individual Appliance Monitors [3] so
+file BellendenRd/currentCost/currentCostData23.dat onwards have three columns:
+
+* col1 is the Unix timestamp
+* col2 is the sensor number
+* col3 is the power reading
+
+See the README file in BellendenRd/currentCost for details of the mapping between sensor number
+and appliance name.
+
+
+FUTURE PLANS
+============
+
+On 22nd June 2012 I ordered 24 CurrentCost Individual Monitors (to monitor the power
+consumption of the majority of appliances in my home).
+
+I will also order an OpenEnergyMonitor [4] which should allow me to monitor voltage,
+real power and reactive power once a second for my entire house.
+
+A blog entry about these plans is available at:
+http://jack-kelly.com/monitoring_individual_appliances
+
+
+ABOUT & CONTACT
+===============
+I am a PhD student at Imperial College's Department of Computing working on smart meter disaggregation.
+
+You can contact me at http://jack-kelly.com/contact
+
+
+REFERENCES
+==========
+
+[1] WattsUp meter specifications:     https://www.wattsupmeters.com/secure/products.php?pn=0&wai=0&more=1
+[2] CurrentCost EnviR specifications: http://www.currentcost.com/product-envir.html
+[3] CurrentCost IAM specifications:   http://www.currentcost.com/product-iams.html
+[4] OpenEnergyMonitor specifications: http://openenergymonitor.org/emon/emontx
