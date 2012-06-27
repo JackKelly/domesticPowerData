@@ -37,10 +37,8 @@ appliance is off.
 MAPPING FROM SENSOR NUMBER TO APPLIANCE NAME
 ============================================
 
-0  Whole-house aggregate consumption measured using a CurrentCost CT clamp
-1  42" CRT TV
-2  Fridge-freezer
-3  Jack's HP laptop
+The mapping from sensor number to appliance name is stored in
+sensorNames.csv.  This is an ordered list, started at 0.
 
 
 DATA ON COSM (formerly "Pachube")
