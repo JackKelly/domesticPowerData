@@ -1,11 +1,16 @@
 The files in BellendenRd/currentCost are named in chronological order.
 Typically there is a gap of about a day between files.
 
-The whole-house CurrentCost data for BellendenRd is also available on Cosm.com:
-https://cosm.com/feeds/49595 (the "currentCost" feed)
+The data in this folder were logged using my currentCostCosmTX Python script:
+https://github.com/JackKelly/currentCostCosmTX
 
-The data in this folder were logged using my currentCostPachubeTX Python script:
-https://github.com/JackKelly/currentCostPachubeTX
+
+CHANGE IN FILE NAMING ON 27th JUNE 2012
+=======================================
+
+Prior to 27th June 2012, files were named "currentCostDataXY.dat".
+After 27th June 2012, all data will be stored in the "data.csv" file.
+
 
 CURRENTCOST INDIVIDUAL APPLIANCE MONITORS (IAMs)
 ================================================
@@ -36,3 +41,13 @@ MAPPING FROM SENSOR NUMBER TO APPLIANCE NAME
 1  42" CRT TV
 2  Fridge-freezer
 3  Jack's HP laptop
+
+
+DATA ON COSM (formerly "Pachube")
+=================================
+
+Aggregate data up until 26th June 2012 is available on the
+"currentCost" datastream on feed https://cosm.com/feeds/49595
+
+After 26th June 2012, data from all sensors are being logged to
+feed https://cosm.com/feeds/64961
