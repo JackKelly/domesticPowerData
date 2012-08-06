@@ -1,13 +1,3 @@
-01 Aggregate
-05 TV
-06 Amp
-07 Subwoofer
-08 HTPC
-09 WashingMachine
-10 AdslModem
-11 LR_Lamp1
-12 LR_Lamp2
-13 LR_Lamp3
 14 Kitchen_DownLights
 15 Toaster_or_KitchenAid_or_KenwoodMixer_or_BraunMixer
 16 Kettle_or_SandwichToaster_or_Breville
@@ -26,3 +16,4 @@
 29 GigEswitch
 30 Fan
 31 BatteryCharger
+99 Aggregate
